@@ -1,0 +1,24 @@
+{
+  "name": "Pandora refresher",
+  "version": "0.3",
+  "description": "Refreshes Pandora when inactive",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action" :
+  {
+    "default_icon" : "icon-refresh-128.png",
+    "default_title" : "Pandora refresher"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.pandora.com/*"],
+      "js": ["pandora_refresher.js"]
+    }
+  ],
+  "permissions" : [
+    "declarativeContent"
+  ],
+  "manifest_version": 2
+}
