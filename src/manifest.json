@@ -1,6 +1,6 @@
 {
   "name": "Pandora refresher",
-  "version": "0.3",
+  "version": "0.4",
   "description": "Refreshes Pandora when inactive",
   "background": {
     "scripts": ["background.js"],
